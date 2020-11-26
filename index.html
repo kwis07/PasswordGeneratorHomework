@@ -24,26 +24,38 @@
           <br>
           <h3>Choose a password between 8 and 128 characters</h3>
 
+          <section class="container">
 
-          <div class="setting">
-            <label>Include uppercase letters</label> 
-            <input type="checkbox" id="uppercase" checked />
-        </div>
-        <div class="setting">
-            <label>Include lowercase letters</label> 
-            <input type="checkbox" id="lowercase" checked />
-        </div>
-        <div class="setting">
-            <label>Include numbers</label> 
-            <input type="checkbox" id="numbers" checked />
-        </div>
-        <div class="setting">
-            <label>Include symbols</label> 
-            <input type="checkbox" id="symbols" checked />
-        </div>
-
-    
-
+            <!-- First checkbox -->
+            <div class="settings">
+              <div class="set-checkboxes">
+                <label class="set-label">Number of characters?</label>
+                <input class="input-box" type="number" id="charNum" value="8" min="8" max="128" />
+              </div>
+               <!-- second checkbox -->
+              <div class="set-checkboxes">
+                <div class="set-chk-box-1">
+                  <label class="set-label">Numbers:</label>
+                  <input type="checkbox" id="numbers" />
+                </div>
+                <!-- third checkbox -->
+                <div class="set-chk-box-2">
+                  <label class="set-label">Symbols:</label>
+                  <input type="checkbox" id="symbols" /><br />
+                </div>
+                <!-- fourth checkbox -->
+                <div class="set-chk-box-3">
+                  <label class="set-label">Upper Case:</label>
+                  <input type="checkbox" id="uppercase" /><br />
+                </div>
+                <!-- fifth checkbox -->
+                <div class="set-chk-box-4">
+                  <label class="set-label">Lower Case:</label>
+                  <input type="checkbox" id="lowercase" /><br />
+                </div>
+              </div>
+            </div>
+          </section>
 
                 
                 <div class="card-body">
@@ -57,7 +69,7 @@
            
     
             <div class="card-footer">
-                <button type="button" onclick="getPassword();">Generate</button>
+                <button id="generate" class="btn">Generate Password</button>
             </div>
     
               </div>
