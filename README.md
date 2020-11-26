@@ -1,5 +1,1 @@
-# PasswordGeneratorHomework
-Bootcamp homework number 3
-
-
-<img src="https://i.postimg.cc/3R55nK3Q/Screenshot.png"</img>
+![image 1](https://github.com/kwis07/homework1211/blob/main/Assets/images/Screenshot.png)
