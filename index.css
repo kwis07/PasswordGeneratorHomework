@@ -1,28 +1,17 @@
-*
-{
-    margin: 10;
-    padding: 10;
-    font-family: consolas;
-    user-select: none;
 
+body {
+	display: flex;
+	font-family: 'Muli', sans-serif;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    min-height: 100vh;
 }
 
-body 
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: yellow;
-}
-.inputBox 
-{
-    position: relative;
-    width: 750px;
-}
 .inputBox h2
  {
      font-size: 30px;
-     color: red;
+     color: rgb(255, 255, 255);
 
 }
 
@@ -38,21 +27,16 @@ body
     letter-spacing: 5px;
     box-sizing: border-box;
     border-radius: 10px;
-    color: rgb(44, 16, 206);
+    color: rgb(233, 40, 50);
    
 }
 
-.inputBox input::placeholder
-{
-    letter-spacing: 0px;
-}
 
 .inputBox #button 
 {
     position: relative;
     cursor: pointer;
     color: yellow;
-    background: #333;
     font-size: 30px;
     display: inline-block;
     padding: 10px 15px;
@@ -61,16 +45,25 @@ body
 }
 .inputBox #button:active
 {
-    background: yellow;
+    background: rgb(248, 248, 246);
 }
 
 .container {
-   position: relative;
-   align-items: center;
-   margin: 70px;   
-
+	background-color: #000000;
+	padding: 20px;
+	width: 350px;
+	max-width: 100%;
 }
+
+
 
 h1 {
     text-align: center;
+    margin: 50px;
+}
+
+
+
+input[type=checkbox] {
+	margin-right: 0;
 }
