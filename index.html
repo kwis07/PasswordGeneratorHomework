@@ -13,23 +13,52 @@
 
 <body>
 
-    <h1>Password Generator</h1> 
+    <div class="wrapper">
+        <header>
+          <h1>Password Generator</h1>
+        </header>
+        <div class="card">
+          <div class="card-header">
+            <h2>Generate a Password</h2>
+          </div>
+          <br>
+          <h3>Choose a password between 8 and 128 characters</h3>
 
 
-        <div class="container">
-        
-        
-            <div class="inputBox">
+          <div class="setting">
+            <label>Include uppercase letters</label> 
+            <input type="checkbox" id="uppercase" checked />
+        </div>
+        <div class="setting">
+            <label>Include lowercase letters</label> 
+            <input type="checkbox" id="lowercase" checked />
+        </div>
+        <div class="setting">
+            <label>Include numbers</label> 
+            <input type="checkbox" id="numbers" checked />
+        </div>
+        <div class="setting">
+            <label>Include symbols</label> 
+            <input type="checkbox" id="symbols" checked />
+        </div>
+
+    
+
+
                 
-                <h2>Generate a Password</h2>
-                <input type="text" name="" placeholder="Create Password" id= "password" readonly="">
+                <div class="card-body">
+                    <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+                  </div>
     
             </div>
-                
+
+
+           
+           
     
-        
-                <div class="p-2"> <button type="button" onclick="getPassword();">Generate</button></div>
-               
+            <div class="card-footer">
+                <button type="button" onclick="getPassword();">Generate</button>
+            </div>
     
               </div>
               
